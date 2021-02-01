@@ -5,11 +5,13 @@ import { HealthBtn } from './components/classesLogginButtons/itemButtons/HealthB
 import { WorkBtn } from './components/classesLogginButtons/itemButtons/WorkBtn';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="page-container">
+    <div className="content-wrap">
     <Navbar/>
     <WorkBtn>Work</WorkBtn>
     <HealthBtn class="healthbtn">Health</HealthBtn>
@@ -19,11 +21,10 @@ function App() {
     <Button>Friends</Button>
     <Button>Education</Button>
     <Button>Entertainment</Button>
-    <Footer/>
-
-
-
     </div>
+    <Footer/>
+    </div>
+    
 
   );
 }
